@@ -1,0 +1,2 @@
+def hammingWeight(n):
+    pass
