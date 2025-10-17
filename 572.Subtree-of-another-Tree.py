@@ -35,7 +35,6 @@ def build_tree(arr):
 
 
 
-
 def isSameTree(root,subRoot):
     if root is None and subRoot is None:
         return True
@@ -84,5 +83,3 @@ def print_binary_tree(root):
             queue.append(node.right)
     return arr
     
-    
-print(print_binary_tree(build_tree([1,2,3,4,5])))
