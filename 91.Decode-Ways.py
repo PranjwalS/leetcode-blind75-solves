@@ -12,11 +12,11 @@ def numDecodings(s):
         dic[i] = count
         return count
 
-    return helper(0)
+    return helper(0), dic
 
 
 
 
 
-s='2234'
+s='22'
 print(numDecodings(s))
