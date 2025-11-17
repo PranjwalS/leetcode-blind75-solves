@@ -1,5 +1,6 @@
 def getSum(a, b):
-    mask = 0xFFFFFFFF
+    mask = 0xFFFFFFFF ### DONT FORGET, YOU NEEDS MASKS FOR NEGATIVE BIT VALUES
+    
     xor = (a^b) & mask
     inter = (a&b) & mask
     while inter>0:
@@ -11,4 +12,4 @@ def getSum(a, b):
 
 print(getSum(1, 2)) # 3
 print(getSum(2,3)) # 5
-print(getSum(-1,11))
+print(getSum(-1,11)) #10
